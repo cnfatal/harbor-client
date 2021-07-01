@@ -73,3 +73,9 @@ fmt.Printf("tags: %s", tags.Tags)
 ## Documents
 
 See [Go Doc](https://pkg.go.dev/github.com/fatalc/harbor-client)
+
+## Contributing
+
+Everyone is welcome to contribute.no limit, just creeate a Merge Request.
+
+See [Project](https://github.com/fatalc/harbor-client/projects/1) for more information.
