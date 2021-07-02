@@ -1,5 +1,9 @@
 # harbor-client
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/fatalc/harbor-client)](https://goreportcard.com/report/github.com/fatalc/harbor-client)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7b80205b09f94bfb469a/test_coverage)](https://codeclimate.com/github/fatalc/harbor-client/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7b80205b09f94bfb469a/maintainability)](https://codeclimate.com/github/fatalc/harbor-client/maintainability)
+
 Golang client of [goharbor/harbor](https://github.com/goharbor/harbor).
 
 **NOT STABLE YET**
@@ -25,48 +29,30 @@ harbor client:
 ```go
 import client "github.com/fatalc/harbor-client"
 
-cli, err := client.NewClient("harbor.example.com", client.WithBasicAuth("admin", "password"))
-if err != nil {
-    log.Fatal(err)
-}
-sysinfo, err := cli.SystemInfo(context.Background())
-if err != nil {
-    log.Fatal(err)
-}
-fmt.Println(sysinfo)
+cli, _ := client.NewClient("harbor.example.com", client.WithBasicAuth("admin", "password"))
 
 image := "harbor.example.com/library/nginx:alpine"
-project, repository, reference, err := client.ParseHarborSuitImage(image)
-if err != nil {
-    log.Fatal(err)
-}
-artifact, err := cli.GetArtifact(context.Background(), project, repository, reference, client.GetArtifactOptions{
-    WithScanOverview: true,
-    WithLabel:        true,
-})
-if err != nil {
-    log.Fatal(err)
-}
-fmt.Println(artifact)
+project, repository, reference, _ := client.ParseHarborSuitImage(image)
 
+ctx:=context.Background()
+artifact, _ := cli.GetArtifact(ctx, project, repository, reference, client.GetArtifactOptions{})
+
+fmt.Println(artifact)
 ```
+
+> Ommited error handle
 
 OCI distribution client:
 
 ```go
-ocicli, err := client.NewOCIDistributionClient("registry.example.com", client.BasicAuth("user", "password"))
-if err != nil {
-    log.Fatal(err)
-}
+ocicli, _ := client.NewOCIDistributionClient("registry.example.com", client.BasicAuth("user", "password"))
 
 if err := ocicli.Ping(context.Background()); err != nil {
+    log.Infof("may be auth failed")
     return
 }
 
-tags, err := ocicli.ListTags(context.Background(), "library/nginx")
-if err != nil {
-    log.Fatal(err)
-}
+tags, _ := ocicli.ListTags(context.Background(), "library/nginx")
 fmt.Printf("tags: %s", tags.Tags)
 ```
 

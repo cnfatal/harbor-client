@@ -15,7 +15,7 @@ func ExampleNewOCIDistributionClient() {
 	}
 
 	if err := ocicli.Ping(context.Background()); err != nil {
-		return
+		log.Fatal(err)
 	}
 
 	tags, err := ocicli.ListTags(context.Background(), "library/nginx")
