@@ -1,5 +1,6 @@
 # harbor-client
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/fatalc/harbor-client)
 [![Go Report Card](https://goreportcard.com/badge/github.com/fatalc/harbor-client)](https://goreportcard.com/report/github.com/fatalc/harbor-client)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7b80205b09f94bfb469a/test_coverage)](https://codeclimate.com/github/fatalc/harbor-client/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7b80205b09f94bfb469a/maintainability)](https://codeclimate.com/github/fatalc/harbor-client/maintainability)
