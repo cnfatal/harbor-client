@@ -9,6 +9,8 @@ Golang client of [goharbor/harbor](https://github.com/goharbor/harbor).
 
 **NOT STABLE YET**
 
+**Please Star it, Let me know you are in need, and i'll continue working on it**
+
 ## Features
 
 - OCI Distribution Client Supported,see [oci.go](oci.go).
