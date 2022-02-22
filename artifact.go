@@ -126,8 +126,8 @@ type ListArtifactsOptions struct {
 
 func (o *ListArtifactsOptions) toQuery() url.Values {
 	values := o.GetArtifactOptions.toQuery()
-	for k := range o.CommonListOptions.toQuery() {
-		values.Set(k, values.Get(k))
+	for k, v := range o.CommonListOptions.toQuery() {
+		values[k] = v
 	}
 	return values
 }
