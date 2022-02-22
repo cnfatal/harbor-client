@@ -738,8 +738,8 @@ github.com/gogo/protobuf v1.3.0/go.mod h1:SlYgWuQ5SjCEi6WLHjHCa1yvBfUnHcTbrrZtXP
 github.com/gogo/protobuf v1.3.1/go.mod h1:SlYgWuQ5SjCEi6WLHjHCa1yvBfUnHcTbrrZtXPKa29o=
 github.com/gogo/protobuf v1.3.2/go.mod h1:P1XiOD3dCwIKUDQYPy72D8LYyHL2YPYrpS2s69NZV8Q=
 github.com/goharbor/harbor/src v0.0.0-20210630060421-4e1f6633afb8/go.mod h1:EcB6fchhOIJ8CV1UldTLGo7IJW3oR6orJVcYEN4a74A=
-github.com/goharbor/harbor/src v0.0.0-20220222071829-490fe4e5b388 h1:bM8U6zUYIRmlensNJcMtJRzUBRsYOmkBuC572ZRe9II=
-github.com/goharbor/harbor/src v0.0.0-20220222071829-490fe4e5b388/go.mod h1:7zH34ZVouXvNOt+DKqoThOvJQRmKKHaX05Y9A1L3lLc=
+github.com/goharbor/harbor/src v0.0.0-20220217044309-8d05007eb567 h1:wnn982h3AR9Xdk3aaJJai6SwO2VXpFmU8WW6pqm/H40=
+github.com/goharbor/harbor/src v0.0.0-20220217044309-8d05007eb567/go.mod h1:7zH34ZVouXvNOt+DKqoThOvJQRmKKHaX05Y9A1L3lLc=
 github.com/goji/httpauth v0.0.0-20160601135302-2da839ab0f4d/go.mod h1:nnjvkQ9ptGaCkuDUx6wNykzzlUixGxvkme+H/lnzb+A=
 github.com/golang-jwt/jwt/v4 v4.0.0/go.mod h1:/xlHOz8bRuivTWchD4jCa+NbatV+wEUSzwAxVc6locg=
 github.com/golang-jwt/jwt/v4 v4.1.0/go.mod h1:/xlHOz8bRuivTWchD4jCa+NbatV+wEUSzwAxVc6locg=
