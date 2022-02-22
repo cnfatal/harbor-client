@@ -30,7 +30,7 @@ type CommonListOptions struct {
 func (o *CommonListOptions) toQuery() url.Values {
 	return url.Values{
 		"page":      []string{strconv.Itoa(o.Page)},
-		"page_size": []string{strconv.Itoa(o.Page)},
+		"page_size": []string{strconv.Itoa(o.Size)},
 		"q":         []string{o.Q},
 	}
 }
