@@ -1,4 +1,4 @@
-module github.com/oneinstack/harbor-client
+module github.com/cnfatal/harbor-client
 
 go 1.17
 
