@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	client "github.com/fatalc/harbor-client"
+	client "github.com/cnfatal/harbor-client"
 )
 
 func ExampleNewClient() {

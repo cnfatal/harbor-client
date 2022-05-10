@@ -5,7 +5,6 @@ go 1.17
 require (
 	github.com/containerd/containerd v1.6.0
 	github.com/docker/distribution v2.7.1+incompatible
-	github.com/fatalc/harbor-client v0.0.0-20210810024716-e678e228ae33
 	github.com/goharbor/harbor/src v0.0.0-20220217044309-8d05007eb567
 	github.com/opencontainers/distribution-spec/specs-go v0.0.0-20220217185014-dd38b7ed8a99
 	github.com/opencontainers/image-spec v1.0.2

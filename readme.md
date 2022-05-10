@@ -1,15 +1,11 @@
 # harbor-client
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/fatalc/harbor-client)
-[![Go Report Card](https://goreportcard.com/badge/github.com/fatalc/harbor-client)](https://goreportcard.com/report/github.com/fatalc/harbor-client)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/7b80205b09f94bfb469a/test_coverage)](https://codeclimate.com/github/fatalc/harbor-client/test_coverage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/7b80205b09f94bfb469a/maintainability)](https://codeclimate.com/github/fatalc/harbor-client/maintainability)
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/cnfatal/harbor-client)
+[![Go Report Card](https://goreportcard.com/badge/github.com/cnfatal/harbor-client)](https://goreportcard.com/report/github.com/cnfatal/harbor-client)
 
 Golang client of [goharbor/harbor](https://github.com/goharbor/harbor).
 
-**NOT STABLE YET**
-
-**Please Star it, Let me know you are in need, and i'll continue working on it**
+**NOT STABLE YET.**
 
 ## Features
 
@@ -22,7 +18,7 @@ Golang client of [goharbor/harbor](https://github.com/goharbor/harbor).
 ## Install
 
 ```sh
-go get github.com/fatalc/harbor-client
+go get github.com/cnfatal/harbor-client
 ```
 
 ## Example
@@ -30,7 +26,7 @@ go get github.com/fatalc/harbor-client
 harbor client:
 
 ```go
-import client "github.com/fatalc/harbor-client"
+import client "github.com/cnfatal/harbor-client"
 
 cli, _ := client.NewClient("harbor.example.com", client.WithBasicAuth("admin", "password"))
 
@@ -61,10 +57,10 @@ fmt.Printf("tags: %s", tags.Tags)
 
 ## Documents
 
-See [Go Doc](https://pkg.go.dev/github.com/fatalc/harbor-client)
+See [Go Doc](https://pkg.go.dev/github.com/cnfatal/harbor-client)
 
 ## Contributing
 
 Everyone is welcome to contribute.no limit, just creeate a Merge Request.
 
-See [Project](https://github.com/fatalc/harbor-client/projects/1) for more information.
+See [Project](https://github.com/cnfatal/harbor-client/projects/1) for more information.
