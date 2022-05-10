@@ -1,6 +1,5 @@
 # harbor-client
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/cnfatal/harbor-client)
 [![Go Report Card](https://goreportcard.com/badge/github.com/cnfatal/harbor-client)](https://goreportcard.com/report/github.com/cnfatal/harbor-client)
 
 Golang client of [goharbor/harbor](https://github.com/goharbor/harbor).
